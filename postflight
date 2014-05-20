@@ -1,0 +1,34 @@
+#!/bin/sh
+
+# Remove Keychain Items
+rm /System/Library/Keychains/AppleServiceToolkit.keychain
+
+#Remove Launch Daemons
+rm /System/Library/LaunchDaemons/com.apple.gw_controld
+rm /System/Library/LaunchDaemons/gw_datad
+rm /System/Library/LaunchDaemons/gw_logd.plist
+rm /System/Library/LaunchDaemon/com.apple.gw.controld.plist
+rm /System/Library/LaunchDaemon/com.apple.gw.logd.plist
+rm /System/Library/LaunchDaemon/com.apple.gw.datad.plist
+
+# Remove Preferences
+rm /Library/Preferences/com.apple.gateway.plist
+rm ~/Library/Preferences/com.apple.GatewayManager.plist
+
+# Remove command line utilities
+rm /usr/bin/gw_controld
+rm /usr/bin/gw_datad
+rm /usr/bin/gw_logd
+
+# Remove Diagnostics Gateway & support files
+rm -R /Applications/Gateway\ Manager.app
+rm -R /var/adg
+rm -R /private/var/adg
+
+# Remove Netboot Sets
+rm -R /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
+
+# Remove log files
+rm /gw_controld.log 
+
+exit 0
