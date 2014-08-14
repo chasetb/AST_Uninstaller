@@ -27,6 +27,11 @@ rm -R /private/var/adg
 
 # Remove Netboot Sets
 rm -R /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
+rm -R /Library/NetBoot/NetBootSP0/AppleDiagnosticOSs
+rm -R /Library/NetBoot/NetBootSP0/AST64bit.nbi
+rm -R /Library/NetBoot/NetBootSP0/ASTLegacy.nbi
+rm -R /Library/NetBoot/NetBootSP0/Diagnostics.nbi
+rm -R /Library/NetBoot/NetBootSP0/i386
 
 # Remove log files
 rm /gw_controld.log 
