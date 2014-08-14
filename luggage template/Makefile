@@ -19,8 +19,8 @@
 include /usr/local/share/luggage/luggage.make
 
 TITLE=AST_Uninstaller
-REVERSE_DOMAIN=com.simplymac
+REVERSE_DOMAIN=com.chasetb
 PAYLOAD=\
 		pack-script-postflight
 		
-PACKAGE_VERSION=1.0
+PACKAGE_VERSION=1.1
