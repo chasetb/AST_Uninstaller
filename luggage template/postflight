@@ -4,12 +4,9 @@
 rm /System/Library/Keychains/AppleServiceToolkit.keychain
 
 #Remove Launch Daemons
-rm /System/Library/LaunchDaemons/com.apple.gw_controld
-rm /System/Library/LaunchDaemons/gw_datad
-rm /System/Library/LaunchDaemons/gw_logd.plist
-rm /System/Library/LaunchDaemon/com.apple.gw.controld.plist
-rm /System/Library/LaunchDaemon/com.apple.gw.logd.plist
-rm /System/Library/LaunchDaemon/com.apple.gw.datad.plist
+rm /System/Library/LaunchDaemons/com.apple.gw_controld.plist
+rm /System/Library/LaunchDaemons/com.apple.gw_datad.plist
+rm /System/Library/LaunchDaemons/com.apple.gw_logd.plist
 
 # Remove Preferences
 rm /Library/Preferences/com.apple.gateway.plist
@@ -22,18 +19,21 @@ rm /usr/bin/gw_logd
 
 # Remove Diagnostics Gateway & support files
 rm -R /Applications/Gateway\ Manager.app
-rm -R /var/adg
 rm -R /private/var/adg
 
 # Remove Netboot Sets
 rm -R /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
 rm -R /Library/NetBoot/NetBootSP0/AppleDiagnosticOSs
+rm -R /Library/NetBoot/NetBootSP0/AppleDiagnosticOS
 rm -R /Library/NetBoot/NetBootSP0/AST64bit.nbi
 rm -R /Library/NetBoot/NetBootSP0/ASTLegacy.nbi
 rm -R /Library/NetBoot/NetBootSP0/Diagnostics.nbi
 rm -R /Library/NetBoot/NetBootSP0/i386
 
+# Remove receipts
+rm /Library/Receipts/apple.com.astos*
+
 # Remove log files
-rm /gw_controld.log 
+rm -R /private/var/log/adg
 
 exit 0
