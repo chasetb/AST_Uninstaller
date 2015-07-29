@@ -1,9 +1,14 @@
 #!/bin/sh
 
+# Unload LaunchDaemons
+launchctl unload /System/Library/LaunchDaemons/com.apple.gw_controld.plist
+launchctl unload /System/Library/LaunchDaemons/com.apple.gw_datad.plist
+launchctl unload /System/Library/LaunchDaemons/com.apple.gw_logd.plist
+
 # Remove Keychain Items
 rm /System/Library/Keychains/AppleServiceToolkit.keychain
 
-#Remove Launch Daemons
+# Remove Launch Daemons
 rm /System/Library/LaunchDaemons/com.apple.gw_controld.plist
 rm /System/Library/LaunchDaemons/com.apple.gw_datad.plist
 rm /System/Library/LaunchDaemons/com.apple.gw_logd.plist
