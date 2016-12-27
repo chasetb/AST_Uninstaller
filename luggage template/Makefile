@@ -21,6 +21,6 @@ include /usr/local/share/luggage/luggage.make
 TITLE=AST_Uninstaller
 REVERSE_DOMAIN=com.chasetb
 PAYLOAD=\
-		pack-script-postflight
+		pack-script-postinstall
 		
 PACKAGE_VERSION=1.2
