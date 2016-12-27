@@ -23,4 +23,4 @@ REVERSE_DOMAIN=com.chasetb
 PAYLOAD=\
 		pack-script-postflight
 		
-PACKAGE_VERSION=1.1
+PACKAGE_VERSION=1.2
