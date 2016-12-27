@@ -23,22 +23,23 @@ rm /usr/bin/gw_datad
 rm /usr/bin/gw_logd
 
 # Remove Diagnostics Gateway & support files
-rm -R /Applications/Gateway\ Manager.app
-rm -R /private/var/adg
+rm -rf /Applications/Gateway\ Manager.app
+rm -rf /private/var/adg
 
 # Remove Netboot Sets
-rm -R /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
-rm -R /Library/NetBoot/NetBootSP0/AppleDiagnosticOSs
-rm -R /Library/NetBoot/NetBootSP0/AppleDiagnosticOS
-rm -R /Library/NetBoot/NetBootSP0/AST64bit.nbi
-rm -R /Library/NetBoot/NetBootSP0/ASTLegacy.nbi
-rm -R /Library/NetBoot/NetBootSP0/Diagnostics.nbi
-rm -R /Library/NetBoot/NetBootSP0/i386
+rm -rf /Library/NetBoot/NetBootSP0/AppleServiceToolkit.nbi
+rm -rf /Library/NetBoot/NetBootSP0/AppleDiagnosticOSs
+rm -rf /Library/NetBoot/NetBootSP0/AppleDiagnosticOS
+rm -rf /Library/NetBoot/NetBootSP0/AST64bit.nbi
+rm -rf /Library/NetBoot/NetBootSP0/ASTLegacy.nbi
+rm -rf /Library/NetBoot/NetBootSP0/Diagnostics.nbi
+rm -rf /Library/NetBoot/NetBootSP0/i386
+rm -rf /Library/NetBoot/NetBootSP0/TAOS_*
 
 # Remove receipts
 rm /Library/Receipts/apple.com.astos*
 
 # Remove log files
-rm -R /private/var/log/adg
+rm -rf /private/var/log/adg
 
 exit 0
